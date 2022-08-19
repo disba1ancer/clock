@@ -1,0 +1,51 @@
+#pragma code_page(65001)
+#include "winresrc.h"
+#include "generated/cmake_defs.h"
+#include "res.h"
+
+1 VERSIONINFO
+FILEVERSION PROJECT_VERSION_MAJOR,PROJECT_VERSION_MINOR,PROJECT_VERSION_PATCH,PROJECT_VERSION_TWEAK
+PRODUCTVERSION PROJECT_VERSION_MAJOR,PROJECT_VERSION_MINOR,PROJECT_VERSION_PATCH,PROJECT_VERSION_TWEAK
+FILEFLAGSMASK 0
+FILEFLAGS 0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "000004b0"
+    BEGIN
+      VALUE "CompanyName", "disba1ancer"
+      VALUE "FileDescription", PROJECT_DESCRIPTION_STRING
+          VALUE "FileVersion", PROJECT_VERSION_STRING
+          VALUE "InternalName", "clock"
+      VALUE "LegalCopyright", "Copyright (C) disba1ancer 2020"
+      VALUE "OriginalFilename", "clock.exe"
+      VALUE "ProductName", PROJECT_DESCRIPTION_STRING
+          VALUE "ProductVersion", PROJECT_VERSION_STRING
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0, 1200
+  END
+END
+
+IDM_CLOCK_ICON_MENU MENU
+BEGIN
+    POPUP "Context menu"
+    BEGIN
+        MENUITEM "&Run on start", IDM_CLOCK_RUN_ON_START
+        MENUITEM "&Moveable mode", IDM_CLOCK_MOVE_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit", IDM_CLOCK_EXIT
+    END
+END
+
+IDI_CLOCK_ICON ICON "icon.ico"
+
+STRINGTABLE
+BEGIN
+    IDS_CLOCK_TIP "Clock"
+END

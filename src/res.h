@@ -1,0 +1,11 @@
+#ifndef RES_H
+#define RES_H
+
+#define IDI_CLOCK_ICON 100
+#define IDM_CLOCK_ICON_MENU 101
+#define IDM_CLOCK_EXIT 102
+#define IDM_CLOCK_MOVE_MODE 103
+#define IDS_CLOCK_TIP 104
+#define IDM_CLOCK_RUN_ON_START 105
+
+#endif // RES_H
