@@ -43,7 +43,7 @@ BEGIN
     END
 END
 
-IDI_CLOCK_ICON ICON "icon.ico"
+IDI_CLOCK_ICON ICON "..\\icon.ico"
 
 STRINGTABLE
 BEGIN
